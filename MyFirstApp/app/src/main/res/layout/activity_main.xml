@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="14dp"
+    tools:layout_editor_absoluteY="-70dp">
+
+    <EditText
+        android:id="@+id/secondNumEditText"
+        android:layout_width="345dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="88dp"
+        android:ems="10"
+        android:hint="Enter a number"
+        android:inputType="number|textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/addButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNumEditText" />
+
+    <EditText
+        android:id="@+id/firstNumEditText"
+        android:layout_width="338dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="388dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Enter a number"
+        android:inputType="number|textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="307dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="100dp"
+        android:text="RESULT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNumEditText" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="334dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="67dp"
+        android:text="Add"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondNumEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
